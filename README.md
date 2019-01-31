@@ -22,7 +22,7 @@ Both CPU and GPU supported<br/>
 - Clone the code and put your own image queries in folder ```./img_input/```.<br/>
 
 ```
-git clone https://github.com/metalbubble/CAM.git
+git clone https://github.com/liuzrcc/PIRE.git
 cd PIRE
 ```
 
