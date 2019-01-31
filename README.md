@@ -3,6 +3,7 @@
 This repository release the pytorch code for PIRE that generates adversarial examples for neural feature-based CBIR.
 Now we only support generate adversarial queries for GeM.
 
+### Pytorch implementaiton:
 
 To get the PIRE (T = 500) results in our paper, please run:
 
@@ -17,7 +18,7 @@ Detailed explanation of PIRE's parameters can be checked by:
 python3 gen_pire.py -h
 ```
 
-## Results:
+### Experimental results:
 
 The Table shows that adversarial image query generated with enough rounds (T=500) and fewer rounds (T=200) can both
 strongly decreases the performance of neural-feature-based CBIR.
@@ -39,6 +40,7 @@ Some exaples of ranked list and calculated mean average precision (mAP). From th
 
 
 
+
 Please cite the following paper if you use PIRE in your research.
 
       @misc{pire2019,
@@ -48,4 +50,4 @@ Please cite the following paper if you use PIRE in your research.
       Eprint = {arXiv:1901.10332},
       }
       
-
+The copyright of all the images belongs to the image owners.
