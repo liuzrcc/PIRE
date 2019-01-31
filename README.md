@@ -17,8 +17,8 @@ Both CPU and GPU supported<br/>
 (Code tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use the code:
-
-To get the PIRE (T = 500) results in our paper, please run:
+Put image queries in folder ```./img_input/``` and run this code.
+To get PIRE (T = 500) adversarial queries, please run:
 
 ```
 python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "gem" -in_dir "./img_input/" -out_dir "./img_output/" -p True
