@@ -27,7 +27,7 @@ cd PIRE
 ```
 
 
-- To get PIRE (T = 500) adversarial queries, please run:
+- To get PIRE (T = 500) adversarial queries as we have in our paper, please run:
 
 ```
 python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "gem" -in_dir "./img_input/" -out_dir "./img_output/" -p True
@@ -65,7 +65,7 @@ strongly decreases the performance of neural-feature-based CBIR.
 
 
 
-Some exaples of ranked list and calculated mean average precision (mAP). From these exampes, it is observed that PIRE strongly decrease the performance of neural feature-based CBIR.
+Examples of ranked list and calculated average precision (AP). It is observed that PIRE can strongly influence the performance of neural feature-based CBIR.
 
 ![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_2.jpg)
 
