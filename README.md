@@ -9,9 +9,9 @@ GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to
 ### Pytorch implementaiton of PIRE:
 #### Prerequisites
 
-Python3
-PyTorch 1.0.0
-GPU supported (Tested on Python 3.6.6 on Ubuntu 16.04)
+Python3<br/>
+PyTorch 1.0.0<br/>
+GPU supported (Tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use:
 
