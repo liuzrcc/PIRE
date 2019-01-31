@@ -6,8 +6,14 @@ Now PIRE only supports to generate adversarial queries for state-of-the-art CNN 
 GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
 [cnnimageretrieval-pytorch](https://github.com/filipradenovic/cnnimageretrieval-pytorch)
 
-
 ### Pytorch implementaiton of PIRE:
+#### Prerequisites
+
+Python3
+PyTorch 1.0.0
+GPU supported (Tested on Python 3.6.6 on Ubuntu 16.04)
+
+#### How to use:
 
 To get the PIRE (T = 500) results in our paper, please run:
 
