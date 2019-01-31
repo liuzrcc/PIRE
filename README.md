@@ -74,6 +74,6 @@ The copyright of all the images belongs to the image owners.
 
 
 
-## Reference
+## References
 [1] Radenović, Filip, Giorgos Tolias, and Ondrej Chum. 
 "Fine-tuning CNN image retrieval with no human annotation." IEEE Transactions on Pattern Analysis and Machine Intelligence (2018).
