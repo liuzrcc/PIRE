@@ -5,13 +5,13 @@ from src.gem_init import init_network
 from pire import pert_each_im
 import torch
 
-parser = argparse.ArgumentParser(description = "Given a neural features extraction model, generate a adversarial query.")
-parser.add_argument("-T", "--iter", type=int, help="iterative condition.", default="500")
-parser.add_argument("-gpu_id", "--gpu", type=int, help="use GPU or not", default="0")
-parser.add_argument("-cnnmodel", "--model", help="pytorch neural feature extractor", default="gem")
-parser.add_argument("-in_dir", "--input_dir", help="directory for original image query", default= "./img_input/")
-parser.add_argument("-out_dir", "--output_dir", help="directory for generated adversarial query", default="./img_output/")
-parser.add_argument("-perception_op", "--p", help="whether to use perception optimization function p", default=True)
+parser = argparse.ArgumentParser(description = "Given a neural features extraction model and an image query, generates a adversarial query.")
+parser.add_argument("-T", "--iter", type=int, help="Iterative condition, parameter T in the paper.", default="500")
+parser.add_argument("-gpu_id", "--gpu", type=int, help="Using GPU or not, cpu please use -1", default="0")
+parser.add_argument("-cnnmodel", "--model", help="Pytorch CNN feature extractor which extracts neural features.", default="gem")
+parser.add_argument("-in_dir", "--input_dir", help="Directory for original image queries.", default= "./img_input/")
+parser.add_argument("-out_dir", "--output_dir", help="Directory for generated adversarial queries.", default="./img_output/")
+parser.add_argument("-perception_op", "--p", help="Whether to use perception optimization, function p in the paper.", default=True)
 args = parser.parse_args()
 
 
