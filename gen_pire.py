@@ -7,8 +7,8 @@ import torch
 
 parser = argparse.ArgumentParser(description = "Given a neural features extraction model, generate a adversarial query.")
 parser.add_argument("-T", "--iter", type=int, help="iterative condition.", default="500")
-parser.add_argument("-cuda", "--gpu", type=int, help="use GPU or not", default="0")
-parser.add_argument("-m", "--model", help="pytorch neural feature extractor", default="gem")
+parser.add_argument("-gpu_id", "--gpu", type=int, help="use GPU or not", default="0")
+parser.add_argument("-cnnmodel", "--model", help="pytorch neural feature extractor", default="gem")
 parser.add_argument("-in_dir", "--input_dir", help="directory for original image query", default= "./img_input/")
 parser.add_argument("-out_dir", "--output_dir", help="directory for generated adversarial query", default="./img_output/")
 parser.add_argument("-perception_op", "--p", help="whether to use perception optimization function p", default=True)
