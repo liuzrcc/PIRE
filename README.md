@@ -48,7 +48,7 @@ Examples of generated images are shown below:
 
 
 
-The decrease of mean average precision (mAP) in GeM is shown in this table:
+The decrease of mean average precision (mAP) in GeM is shown in table below (BB represents Bounding Box and WI represents whole Image):
 
 
 
