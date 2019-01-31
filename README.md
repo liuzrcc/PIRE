@@ -1,6 +1,9 @@
 ## PIRE: Adversarial Queries for Blocking Content-based Image Retrieval (CBIR).
 
-This repository releases the pytorch implementation for PIRE that generates adversarial examples for neural feature-based CBIR.
+This repository releases the pytorch implementation of "PIRE" in our paper ["Who's Afraid of Adversarial Queries? The Impact of Image Modifications on Content-based Image Retrieval"](https://arxiv.org/abs/1901.10332).
+
+Basically, PIRE generates adversarial examples for neural feature-based CBIR.
+
 Now PIRE only supports to generate adversarial queries for state-of-the-art CNN image retrieval method GeM[1]. 
 
 GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
