@@ -10,22 +10,30 @@ Now PIRE only supports to generate adversarial queries for state-of-the-art CNN 
 ### Pytorch implementaiton of PIRE:
 #### Prerequisites
 
-Python3<br/>
-PyTorch 1.0.0<br/>
+>* Python3<br/>
+>* PyTorch 1.0.0<br/>
 <br/>
 Both CPU and GPU supported<br/>
 (Code tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use the code:
-Put image queries in folder ```./img_input/``` and run this code.<br/>
-To get PIRE (T = 500) adversarial queries, please run:
+
+>* Clone the code and put your own image queries in folder ```./img_input/```.<br/>
+
+```
+git clone https://github.com/metalbubble/CAM.git
+cd PIRE
+```
+
+
+>* To get PIRE (T = 500) adversarial queries, please run:
 
 ```
 python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "gem" -in_dir "./img_input/" -out_dir "./img_output/" -p True
 ```
 
 
-Detailed explanation of PIRE's parameters can be checked by:
+>* Detailed explanation of PIRE's parameters can be checked by:
 
 ```
 python3 gen_pire.py -h
