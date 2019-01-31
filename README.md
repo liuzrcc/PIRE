@@ -31,11 +31,11 @@ strongly decreases the performance of neural-feature-based CBIR.
 	
 Some examples of generated images are shown below:
 
-![patches](https://github.com/liuzrcc/PIRE/examples/PIRE_exp_1.jpg)
+![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_1.jpg)
 
 Some exaples of ranked list and calculated mean average precision (mAP). From these exampes, it is observed that PIRE strongly decrease the performance of image retrieval.
 
-![patches](https://github.com/liuzrcc/PIRE/examples/PIRE_exp_2.jpg)
+![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_2.jpg)
 
 
 
