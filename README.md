@@ -33,6 +33,7 @@ Examples of generated images are shown below:
 The decrease of mean average precision (mAP) in GeM is shown in this table:
 
 
+
 |                  | Oxford5k (BB/WI)                   | Paris6k(BB/WI)                     |
 |------------------|-----------------------------|-----------------------------|
 | Original Queries | 78.39/74.42                 | 87.27/87.26                 |
