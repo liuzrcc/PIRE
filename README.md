@@ -4,9 +4,7 @@ This repository releases the pytorch implementation of "PIRE" in our paper ["Who
 
 Basically, PIRE generates adversarial examples for neural feature-based CBIR.
 
-Now PIRE only supports to generate adversarial queries for state-of-the-art CNN image retrieval method GeM[1]. 
-
-GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
+Now PIRE only supports to generate adversarial queries for state-of-the-art CNN image retrieval method GeM[1]. GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
 [cnnimageretrieval-pytorch](https://github.com/filipradenovic/cnnimageretrieval-pytorch)
 
 ### Pytorch implementaiton of PIRE:
