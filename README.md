@@ -19,6 +19,16 @@ python3 gen_pire.py -h
 ```
 
 ### Experimental results:
+	
+Some examples of generated images are shown below:
+
+![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_1.jpg)
+
+Some exaples of ranked list and calculated mean average precision (mAP). From these exampes, it is observed that PIRE strongly decrease the performance of neural feature-based CBIR.
+
+![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_2.jpg)
+
+
 
 The Table shows that adversarial image query generated with enough rounds (T=500) and fewer rounds (T=200) can both
 strongly decreases the performance of neural-feature-based CBIR.
@@ -29,14 +39,8 @@ strongly decreases the performance of neural-feature-based CBIR.
 | Original Queries | 78.39/74.42                 | 87.27/87.26                 |
 | PIRE (T = 200)   | 22.98/18.00                 | 34.49/26.53                 |
 | PIRE (T = 500)   | 3.93/2.31                   | 10.53/7.18                  |
-	
-Some examples of generated images are shown below:
 
-![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_1.jpg)
 
-Some exaples of ranked list and calculated mean average precision (mAP). From these exampes, it is observed that PIRE strongly decrease the performance of neural feature-based CBIR.
-
-![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_2.jpg)
 
 
 
