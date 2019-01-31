@@ -16,7 +16,7 @@ Both CPU and GPU supported<br/>
 (Code tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use the code:
-Put image queries in folder ```./img_input/``` and run this code.
+Put image queries in folder ```./img_input/``` and run this code.<br/>
 To get PIRE (T = 500) adversarial queries, please run:
 
 ```
