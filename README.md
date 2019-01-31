@@ -1,4 +1,4 @@
-# PIRE: Adversarial Queries for Blocking Content-based Image Retrieval (CBIR).
+## PIRE: Adversarial Queries for Blocking Content-based Image Retrieval (CBIR).
 
 This repository release the pytorch code for PIRE that generates adversarial examples for neural feature-based CBIR.
 Now we only support generate adversarial queries for GeM.
@@ -17,7 +17,7 @@ Detailed explanation of PIRE's parameters can be checked by:
 python3 gen_pire.py -h
 ```
 
-# Results:
+## Results:
 
 The Table shows that adversarial image query generated with enough rounds (T=500) and fewer rounds (T=200) can both
 strongly decreases the performance of neural-feature-based CBIR.
