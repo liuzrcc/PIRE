@@ -1,30 +1,40 @@
 ## PIRE: Adversarial Queries for Blocking Content-based Image Retrieval (CBIR).
 
-This repository releases the pytorch implementation for PIRE that generates adversarial examples for neural feature-based CBIR.
-Now PIRE only supports to generate adversarial queries for state-of-the-art CNN image retrieval method GeM[1]. 
+This repository releases the pytorch implementation of "PIRE" in our paper ["Who's Afraid of Adversarial Queries? The Impact of Image Modifications on Content-based Image Retrieval"](https://arxiv.org/abs/1901.10332).
 
-GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
+Basically, PIRE generates adversarial examples for neural feature-based CBIR.
+
+Now PIRE only supports to generate adversarial queries for state-of-the-art CNN image retrieval method GeM[1]. GeM neural feature extraction code and pre-trained ResNet-101-GeM model refer to:
 [cnnimageretrieval-pytorch](https://github.com/filipradenovic/cnnimageretrieval-pytorch)
 
 ### Pytorch implementaiton of PIRE:
 #### Prerequisites
-
-Python3<br/>
-PyTorch 1.0.0<br/>
+```
+Python3
+PyTorch 1.0.0
+```
 <br/>
 Both CPU and GPU supported<br/>
 (Code tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use the code:
-Put image queries in folder ```./img_input/``` and run this code.<br/>
-To get PIRE (T = 500) adversarial queries, please run:
+
+- Clone the code and put your own image queries in folder ```./img_input/```.<br/>
+
+```
+git clone https://github.com/liuzrcc/PIRE.git
+cd PIRE
+```
+
+
+- To get PIRE (T = 500) adversarial queries as we have in our paper, please run:
 
 ```
 python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "gem" -in_dir "./img_input/" -out_dir "./img_output/" -p True
 ```
 
 
-Detailed explanation of PIRE's parameters can be checked by:
+- Detailed explanation of PIRE's parameters can be checked by:
 
 ```
 python3 gen_pire.py -h
@@ -55,7 +65,7 @@ strongly decreases the performance of neural-feature-based CBIR.
 
 
 
-Some exaples of ranked list and calculated mean average precision (mAP). From these exampes, it is observed that PIRE strongly decrease the performance of neural feature-based CBIR.
+Examples of ranked list and calculated average precision (AP). It is observed that PIRE can strongly influence the performance of neural feature-based CBIR.
 
 ![patches](https://github.com/liuzrcc/PIRE/blob/master/examples/PIRE_exp_2.jpg)
 
