@@ -14,7 +14,6 @@ PyTorch 1.0.0<br/>
 PyTorch 1.0.0<br/>
 <br/>
 Both CPU and GPU supported<br/>
-
 (Code tested with Python 3.6.6 on Ubuntu 16.04)<br/>
 
 #### How to use the code:
