@@ -459,3 +459,23 @@ class GeM(nn.Module):
 pool = GeM
 POOLING = {
     'gem'  : GeM}
+
+
+class ResNetIR(nn.Module):
+    
+    def __init__(self, features):
+        super(ResNetIR, self).__init__()
+        self.features = nn.Sequential(*features)
+        self.norm = L2N()
+    
+    def forward(self, x):
+        # x -> features
+        o = self.features(x)
+
+
+        # features -> pool -> norm
+        o = self.norm(o).squeeze(-1).squeeze(-1)
+
+
+        # permute so that it is Dx1 column vector per image (DxN if many images)
+        return o.permute(1,0)
