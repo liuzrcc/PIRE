@@ -8,7 +8,7 @@ Now PIRE is tested on<br/>
 
 1. State-of-the-art CNN-based CBIR method GeM[1] with pre-trained ResNet-101-GeMsupports model and feature extraction codes provided by [cnnimageretrieval-pytorch](https://github.com/filipradenovic/cnnimageretrieval-pytorch). 
 
-2. Off-the-shelf ResNet-101 pre-trained on ImageNet with a L2-Norm adaptiveAvgPool2d layer.
+2. Off-the-shelf ResNet-101 pre-trained on ImageNet by replacing the original AvgPool2d with adaptiveAvgPool2d for allowing arbitrary size of the input image, and adding an additional L2N layer for feature normalization.
 
 In order to generate adversarial queries for different models, please specific the parameter 'cnnmodel' when running the main file ```gen_pire.py```.
 
