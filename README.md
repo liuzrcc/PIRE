@@ -39,6 +39,12 @@ python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "gem" -in_dir "./img_input/" 
 ```
 
 
+- To get the adversarial queries for pre-trained ResNet-101, please run:
+
+```
+python3 gen_pire.py -T "500" -gpu_id "0" -cnnmodel "imagenet-res101" -in_dir "./img_input/" -out_dir "./img_output/" -p True
+```
+
 - Detailed explanation of PIRE's parameters can be reached by:
 
 ```
