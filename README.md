@@ -10,6 +10,8 @@ Now PIRE is tested on<br/>
 
 2. Off-the-shelf ResNet-101 pre-trained on ImageNet by replacing the original AvgPool2d with adaptiveAvgPool2d for allowing arbitrary size of the input image, and adding an additional L2N layer for feature normalization.
 
+The code for retrieval performance evluation (implementation of CBIR system) is not included.
+
 In order to generate adversarial queries for different models, please specific the parameter 'cnnmodel' when running the main file ```gen_pire.py```.
 
 ### Pytorch implementaiton of PIRE:
