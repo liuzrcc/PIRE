@@ -87,11 +87,12 @@ Examples of ranked list with corresponding average precision (AP). (For each exa
 
 Please cite the following paper if you use PIRE in your research.
 
-      @misc{pire2019,
+      @inproceedings{pire2019,
       Author = {Zhuoran Liu and Zhengyu Zhao and Martha Larson},
       Title = {Who's Afraid of Adversarial Queries? The Impact of Image Modifications on Content-based Image Retrieval},
       Year = {2019},
-      Eprint = {arXiv:1901.10332},
+      booktitle={ACM International Conference on Multimedia Retrieval (ICMR)},
+      organization={ACM}      
       }
       
 The copyright of all the images belongs to the image owners.
